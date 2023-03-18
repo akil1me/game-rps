@@ -8,9 +8,6 @@ const rl = readline.createInterface({
 const Table = require("cli-table");
 
 class Hmac {
-  constructor(move) {
-    this.move = move;
-  }
   getHmacKey() {
     const key = crypto.randomBytes(32).toString("hex");
     return key;
